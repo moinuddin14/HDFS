@@ -1,0 +1,55 @@
+
+
+Cloudera VM Ware issues
+
+1. Not able to access HDFS, getting Connection exception.
+
+All the basic Hadoop services should be running when you start the VM. Port 8020 is for the hadoop-hdfs-namenode service, so my guess is that service has failed and just needs to be restarted.
+ 
+You can check the status of a service with
+service <service-name> status (sudo permissions required)
+and you can restart a service with
+service <service-name> restart (sudo permissions required)
+So 'service hadoop-hdfs-namenode restart' may be all you need. Also check the hadoop-hdfs-datanode service as it may also need to be restarted.
+ 
+The services should have been running, so if they're not it means something went wrong. If you're curious or if you continue to have a problem, have a look at the NameNode logs in /var/log/hadoop-hdfs for anything that looks like a fatal error and post it back here.
+
+**************************************************************************************************************************************
+
+2. 
+
+**************************************************************************************************************************************
+
+3. 
+
+**************************************************************************************************************************************
+
+4. 
+
+**************************************************************************************************************************************
+
+5. 
+
+**************************************************************************************************************************************
+
+6. 
+
+**************************************************************************************************************************************
+
+7. 
+
+**************************************************************************************************************************************
+
+8. 
+
+**************************************************************************************************************************************
+
+9. 
+
+**************************************************************************************************************************************
+
+10. 
+
+**************************************************************************************************************************************
+
+11. 
